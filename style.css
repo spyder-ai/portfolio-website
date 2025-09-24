@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+/* the Header starts */
+#upper {
+    display: flex;                   /* makes logo and menu horizontal */
+    align-items: center;             /* vertical center */
+    justify-content: space-between;  /* logo left, menu right */
+    padding: 10px 20px;              /* small gap around edges */
+    background-color: goldenrod;     /* nav background */
+    width: 100%;
+    box-sizing: border-box;          /* include padding in width */
+}
+
+#upper .logo {
+    height: 50px;
+    width: auto;
+}
+
+#menu {
+    display: flex;
+    gap: 20px;                        /* space between menu items */
+}
+
+#menu h3 {
+    margin: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#menu h3:hover {
+    transform: translateY(-5px) scale(1.05); /* moves up & zoom slightly */
+    color: white;
+}
+
+
+/* hero section starts */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #f5f5f5;
+}
+
+.intro h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.intro h2 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: #ff6600;
+  white-space: nowrap;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #ff6600;
+  width: 2px;
+  animation: blink 0.7s infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.carousel {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* fills container, may crop edges */
+  display: block;
+}
+
+
+
+
